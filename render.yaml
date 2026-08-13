@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: fps-football-player
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python server.py"
+    healthCheckPath: /api/health
+    autoDeploy: true

@@ -1,0 +1,1 @@
+self.addEventListener('install',e=>e.waitUntil(caches.open('fps-v1').then(c=>c.addAll(['/web/','/web/index.html','/web/style.css','/web/app.js']))));
